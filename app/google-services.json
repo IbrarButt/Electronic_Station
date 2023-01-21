@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "605071058294",
+    "project_id": "electronicstation-94606",
+    "storage_bucket": "electronicstation-94606.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605071058294:android:c43c4e44c136233535c657",
+        "android_client_info": {
+          "package_name": "com.example.electronicstation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605071058294-ah3l6b4tba42i1906m732tsihhp15l1i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKzbNjSALWRFbFlaYLui0YGG7WQAgkGsY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605071058294-ah3l6b4tba42i1906m732tsihhp15l1i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

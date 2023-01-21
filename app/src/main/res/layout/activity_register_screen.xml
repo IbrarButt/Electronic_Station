@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".screens.RegisterScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/card_img"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:src="@drawable/user_card" />
+
+        <TextView
+            android:id="@+id/reg_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_img"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="10dp"
+            android:text="Please choose which type of user you belong to form these options"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_desc"
+            android:layout_marginHorizontal="20dp">
+
+            <RadioButton
+                android:id="@+id/userRadioBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="  Electric car owner \n (user who wants to search for an electric  station)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12dp" />
+
+            <RadioButton
+                android:id="@+id/ownerRadioBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:checked="false"
+                android:text="  Owner of home electrical station\n  (user who wishes to display your home as electrical station)"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="12dp" />
+        </RadioGroup>
+
+            <EditText
+                android:id="@+id/user_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/radioGroup"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:width="200dp"
+                android:background="@drawable/rounded_border"
+                android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="5dp"
+                android:hint=" Enter Name*"
+                android:inputType="text"
+                android:padding="5dp" />
+
+            <EditText
+                android:id="@+id/user_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/user_name"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginBottom="20dp"
+                android:width="200dp"
+                android:background="@drawable/rounded_border"
+                android:drawableLeft="@drawable/ic_baseline_email_24"
+                android:drawablePadding="5dp"
+                android:hint=" Enter Email*"
+                android:inputType="textEmailAddress"
+                android:padding="5dp" />
+
+        <EditText
+            android:id="@+id/user_mobile"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/user_email"
+            android:layout_marginHorizontal="20dp"
+            android:drawablePadding="5dp"
+            android:width="200dp"
+            android:background="@drawable/rounded_border"
+            android:drawableLeft="@drawable/ic_baseline_call_24"
+            android:hint=" Enter Mobile*"
+            android:padding="5dp"
+            android:inputType="number"
+
+            />
+
+            <EditText
+                android:id="@+id/user_pass"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/user_mobile"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                android:drawablePadding="5dp"
+                android:width="200dp"
+                android:background="@drawable/rounded_border"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:hint=" Enter Password*"
+                android:inputType="textPassword"
+                android:padding="5dp"
+
+                />
+
+
+            <Button
+                android:id="@+id/reg_btn"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_pass"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/rounded_corner"
+                android:text="Register"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

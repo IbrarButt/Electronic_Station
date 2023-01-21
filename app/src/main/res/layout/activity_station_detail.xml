@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.StationDetail">
+    <TextView
+        android:id="@+id/station_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Station Name"
+        android:layout_centerHorizontal="true"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Station Name"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/station_name" />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Station Name"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/type" />
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Availability"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="16sp"
+        android:layout_below="@id/location" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/availability"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/timeContainer"
+        >
+    <TextView
+        android:id="@+id/startTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Time"
+        android:layout_marginHorizontal="20dp"
+        android:background="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:padding="8dp"
+       />
+
+        <TextView
+            android:id="@+id/endTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="End Time"
+            android:layout_marginHorizontal="20dp"
+            android:background="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Pay"
+        android:background="@color/purple_700"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:layout_below="@id/timeContainer"
+        android:layout_marginTop="200dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+
+
+
+
+
+
+
+</RelativeLayout>

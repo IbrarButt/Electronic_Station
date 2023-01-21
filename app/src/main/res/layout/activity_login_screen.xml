@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".screens.LoginScreen">
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="30dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:id="@+id/user_name"
+        android:width="200dp"
+        android:hint=" Enter Name"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24"
+       android:layout_below="@id/logo_image"
+        android:background="@drawable/rounded_border"
+      android:drawablePadding="5dp"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/user_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/user_name"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"
+        android:width="200dp"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:hint=" Enter Password"
+        android:inputType="textPassword"
+        android:padding="5dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:layout_below="@id/user_pass"
+        android:id="@+id/forgot_pass"
+        android:layout_marginHorizontal="25dp"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/rounded_corner"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_below="@id/forgot_pass"
+        android:id="@+id/login_btn"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
