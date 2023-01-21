@@ -1,6 +1,8 @@
 package com.example.electronicstation.screens.modals;
 
-public class Station {
+import java.io.Serializable;
+
+public class Station implements Serializable {
     private String name;
     private String stationLevel;
     private String startTime;

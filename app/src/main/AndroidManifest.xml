@@ -13,10 +13,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ElectronicStation">
         <activity
+            android:name=".screens.AddStation"
+            android:exported="false" />
+        <activity
             android:name=".screens.StationDetail"
             android:exported="true"
-            android:parentActivityName=".screens.MainActivity"
-            />
+            android:parentActivityName=".screens.MainActivity" />
         <activity
             android:name=".screens.RegisterScreen"
             android:exported="true"

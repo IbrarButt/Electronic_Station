@@ -1,7 +1,9 @@
 package com.example.electronicstation.screens;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -44,6 +46,16 @@ public class MainActivity extends AppCompatActivity {
             imageView.setVisibility(View.VISIBLE);
             emptyText.setVisibility(View.VISIBLE);
         }
+
+        stationsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent intent = new Intent(getApplicationContext(),StationDetail.class);
+                intent.putExtra("STATION_DETAIL",stations.get(position));
+                startActivity(intent);
+            }
+        });
 
 
     }
