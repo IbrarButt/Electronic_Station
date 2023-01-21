@@ -7,16 +7,45 @@ public class Station implements Serializable {
     private String stationLevel;
     private String startTime;
     private String endTime;
-    private String location;
+    private String locationUrl;
+    private String locationDistance;
+    private String userName;
 
-    public Station(String name, String stationLevel, String startTime, String endTime, String location) {
+
+
+    public Station(String name, String stationLevel, String startTime, String endTime, String locationUrl, String locationDistance, String userName) {
         this.name = name;
         this.stationLevel = stationLevel;
         this.startTime = startTime;
         this.endTime = endTime;
-        this.location = location;
+        this.locationUrl = locationUrl;
+        this.locationDistance = locationDistance;
+        this.userName = userName;
     }
 
+    public Station(String name, String stationLevel, String startTime, String endTime, String location, String locationDistance) {
+        this.name = name;
+        this.stationLevel = stationLevel;
+        this.startTime = startTime;
+        this.endTime = endTime;
+        this.locationUrl = location;
+        this.locationDistance = locationDistance;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+    public String getLocationDistance() {
+        return locationDistance;
+    }
+
+    public void setLocationDistance(String locationDistance) {
+        this.locationDistance = locationDistance;
+    }
     public String getName() {
         return name;
     }
@@ -50,10 +79,10 @@ public class Station implements Serializable {
     }
 
     public String getLocation() {
-        return location;
+        return locationUrl;
     }
 
     public void setLocation(String location) {
-        this.location = location;
+        this.locationUrl = location;
     }
 }

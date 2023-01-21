@@ -8,17 +8,19 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.electronicstation.R;
+import com.example.electronicstation.screens.adapters.SharePreferences;
 import com.example.electronicstation.screens.modals.Station;
 
 public class StationDetail extends AppCompatActivity {
 
     private TextView stationName, type, distance, startTime, endTime;
     Button payBtn;
+    SharePreferences sharePreferences;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_station_detail);
-        setTitle("Booking");
+        setTitle("Stations");
         Station station = (Station) getIntent().getSerializableExtra("STATION_DETAIL");
 
         initializeData();
@@ -28,6 +30,9 @@ public class StationDetail extends AppCompatActivity {
         distance.setText("Distance from your location: "+ station.getLocation());
         startTime.setText(station.getStartTime());
         endTime.setText(station.getEndTime());
+        if(!sharePreferences.isOwner()){
+            payBtn.setVisibility(View.VISIBLE);
+        }
 
         payBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,5 +49,6 @@ public class StationDetail extends AppCompatActivity {
         startTime = findViewById(R.id.startTime);
         endTime = findViewById(R.id.endTime);
         payBtn = findViewById(R.id.payBtn);
+        sharePreferences = new SharePreferences(getApplicationContext());
     }
 }

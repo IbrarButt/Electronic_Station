@@ -7,4 +7,106 @@
     android:layout_height="match_parent"
     tools:context=".screens.AddStation">
 
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:id="@+id/station_Name"
+        android:width="200dp"
+        android:hint=" Enter Name *"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_local_gas_station_24"
+        android:background="@drawable/rounded_border"
+        android:drawablePadding="5dp"
+        android:inputType="text"
+        />
+
+
+    <EditText
+        android:id="@+id/station_Level"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/station_Name"
+        android:layout_marginHorizontal="20dp"
+        android:width="200dp"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@drawable/ic_baseline_local_gas_station_24"
+        android:drawablePadding="5dp"
+        android:hint=" Enter Level *"
+        android:inputType="number"
+        android:padding="5dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/station_Level"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="15dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:entries="@array/locations"
+        android:spinnerMode="dropdown" />
+
+
+
+    <TextView
+        android:id="@+id/availability"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Availability"
+        android:layout_below="@id/spinner1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:id="@+id/startTime"
+        android:layout_below="@id/availability"
+        android:width="200dp"
+        android:hint=" Enter Start Time *"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+        android:background="@drawable/rounded_border"
+        android:drawablePadding="5dp"
+        android:inputType="time"
+        />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/startTime"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="15dp"
+        android:width="200dp"
+        android:background="@drawable/rounded_border"
+        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+        android:drawablePadding="5dp"
+        android:hint=" Enter End Time *"
+        android:inputType="time"
+        android:padding="5dp" />
+
+    <Button
+        android:id="@+id/add_Station"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/endTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/rounded_corner"
+        android:text="Add "
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+
+
+        />
+
+
+
 </RelativeLayout>

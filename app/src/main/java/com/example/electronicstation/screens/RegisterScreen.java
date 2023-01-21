@@ -59,10 +59,10 @@ public class RegisterScreen extends AppCompatActivity {
             passwordEditText.setError("Password is required");
         }else{
             AuthUser authUser = new AuthUser(
-                    nameEditText.getText().toString(),
+                     nameEditText.getText().toString(),
                     passwordEditText.getText().toString(),
                     mobileEditText.getText().toString(),
-                    emailEditText.getText().toString(), userRadioBtn.isChecked());
+                    emailEditText.getText().toString(), !userRadioBtn.isChecked());
 
 
             //Add data to Firestore

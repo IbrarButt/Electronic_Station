@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Electronic Station</string>
+    <string-array name="locations">
+        <item>F9</item>
+        <item>G8</item>
+        <item>I9</item>
+        <item>G10</item>
+    </string-array>
 </resources>

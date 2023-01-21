@@ -14,7 +14,9 @@
         android:theme="@style/Theme.ElectronicStation">
         <activity
             android:name=".screens.AddStation"
-            android:exported="false" />
+            android:exported="false"
+
+            />
         <activity
             android:name=".screens.StationDetail"
             android:exported="true"
